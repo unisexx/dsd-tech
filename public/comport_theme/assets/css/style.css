@@ -3467,10 +3467,10 @@ h6 {
     background: #ff9902;
     font-family: 'Prompt', sans-serif;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 600;
     display: inline-block;
-    padding: 15px 30px !important;
+    padding: 9px 30px !important;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;

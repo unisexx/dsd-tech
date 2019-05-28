@@ -25,4 +25,14 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    // ผลการค้นหา
+    public function result(){
+
+    }
+
+    // รายละเอียดชื่อคน
+    public function detail(){
+
+    }
 }
