@@ -2,59 +2,6 @@
 
 @section('content')
 
-<!-- Preloader Starts -->
-<div class="preloader">
-        <div class="spinner"></div>
-    </div>
-    <!-- Preloader End -->
-
-    <!-- Header Area Starts -->
-	<header class="header-area main-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="logo-area">
-                        <a href="{{ url('/') }}"><img src="{{ url('comport_theme/assets/images/logo2.png') }}" alt="logo" width="200"></a>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <div class="custom-navbar">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>  
-                    <div class="main-menu">
-                        <ul>
-                            <!-- <li class="active"><a href="index.html">หน้าแรก</a></li>
-                            <li><a href="about.html">about us</a></li>
-                            <li><a href="job-category.html">category</a></li>
-                            <li><a href="#">blog</a>
-                                <ul class="sub-menu">
-                                    <li><a href="blog-home.html">Blog Home</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contact-us.html">contact</a></li>
-                            <li><a href="#">pages</a>
-                                <ul class="sub-menu">
-                                    <li><a href="job-search.html">Job Search</a></li>
-                                    <li><a href="job-single.html">Job Single</a></li>
-                                    <li><a href="pricing-plan.html">Pricing Plan</a></li>
-                                    <li><a href="elements.html">Elements</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-btn">
-                                <a href="#" class="login">log in</a>
-                                <a href="#" class="template-btn">sign up</a>
-                            </li> -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- Header Area End -->
-
     <!-- Banner Area Starts -->
     <section class="banner-area">
         <div class="container-fluid">
@@ -133,33 +80,33 @@
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6">
-                    <a href="#">
+                    <a href="{{ url('result?service_id=1') }}">
                         <div class="single-category text-center mb-4">
-                            <img src="{{ url('comport_theme/assets/images/icon/cable.png') }}" alt="category" width="48">
+                            <img src="{{ url('comport_theme/assets/images/icon/cable.png') }}" alt="ช่างเดินสายไฟฟ้าภายในอาคาร" width="48">
                             <h4>ช่างเดินสายไฟฟ้าภายในอาคาร</h4>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <a href="#">
+                    <a href="{{ url('result?service_id=2') }}">
                         <div class="single-category text-center mb-4">
-                            <img src="{{ url('comport_theme/assets/images/icon/air.png') }}" alt="category" width="48">
+                            <img src="{{ url('comport_theme/assets/images/icon/air.png') }}" alt="ช่างซ่อมเครื่องปรับอากาศ" width="48">
                             <h4>ช่างซ่อมเครื่องปรับอากาศ</h4>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <a href="#">
+                    <a href="{{ url('result?service_id=3') }}">
                         <div class="single-category text-center mb-4">
-                            <img src="{{ url('comport_theme/assets/images/icon/car.png') }}" alt="category" width="48">
+                            <img src="{{ url('comport_theme/assets/images/icon/car.png') }}" alt="ช่างซ่อมรถยนต์" width="48">
                             <h4>ช่างซ่อมรถยนต์</h4>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <a href="#">
+                    <a href="{{ url('result?service_id=4') }}">
                         <div class="single-category text-center mb-4">
-                            <img src="{{ url('comport_theme/assets/images/icon/welder.png') }}" alt="category" width="48">
+                            <img src="{{ url('comport_theme/assets/images/icon/welder.png') }}" alt="ช่างเชื่อม" width="48">
                             <h4>ช่างเชื่อม</h4>
                         </div>
                     </a>
@@ -167,7 +114,7 @@
                 <div class="col-lg-3 col-md-6">
                     <a href="#">
                         <div class="single-category text-center mb-4">
-                            <img src="{{ url('comport_theme/assets/images/icon/pc.png') }}" alt="category" width="48">
+                            <img src="{{ url('comport_theme/assets/images/icon/pc.png') }}" alt="ช่างซ่อมคอมพิวเตอร์" width="48">
                             <h4>ช่างซ่อมคอมพิวเตอร์</h4>
                         </div>
                     </a>
@@ -175,7 +122,7 @@
                 <div class="col-lg-3 col-md-6">
                     <a href="#">
                         <div class="single-category text-center mb-4">
-                            <img src="{{ url('comport_theme/assets/images/icon/oven.png') }}" alt="category" width="48">
+                            <img src="{{ url('comport_theme/assets/images/icon/oven.png') }}" alt="ช่างซ่อมเครื่องใช้ไฟฟ้าในบ้าน" width="48">
                             <h4>ช่างซ่อมเครื่องใช้ไฟฟ้าในบ้าน</h4>
                         </div>
                     </a>
@@ -183,7 +130,7 @@
                 <div class="col-lg-3 col-md-6">
                     <a href="#">
                         <div class="single-category text-center mb-4">
-                            <img src="{{ url('comport_theme/assets/images/icon/bike.png') }}" alt="category" width="48">
+                            <img src="{{ url('comport_theme/assets/images/icon/bike.png') }}" alt="ช่างซ่อมรถจักรยานยนต์" width="48">
                             <h4>ช่างซ่อมรถจักรยานยนต์</h4>
                         </div>
                     </a>
@@ -191,7 +138,7 @@
                 <div class="col-lg-3 col-md-6">
                     <a href="#">
                         <div class="single-category text-center mb-4">
-                            <img src="{{ url('comport_theme/assets/images/icon/tile.png') }}" alt="category" width="48">
+                            <img src="{{ url('comport_theme/assets/images/icon/tile.png') }}" alt="ช่างปูกระเบื้อง" width="48">
                             <h4>ช่างปูกระเบื้อง</h4>
                         </div>
                     </a>
@@ -199,7 +146,7 @@
                 <div class="col-lg-3 col-md-6">
                     <a href="#">
                         <div class="single-category text-center mb-4">
-                            <img src="{{ url('comport_theme/assets/images/icon/painter.png') }}" alt="category" width="48">
+                            <img src="{{ url('comport_theme/assets/images/icon/painter.png') }}" alt="ช่างสีอาคาร" width="48">
                             <h4>ช่างสีอาคาร</h4>
                         </div>
                     </a>
@@ -207,7 +154,7 @@
                 <div class="col-lg-3 col-md-6">
                     <a href="#">
                         <div class="single-category text-center mb-4">
-                            <img src="{{ url('comport_theme/assets/images/icon/construct.png') }}" alt="category" width="48">
+                            <img src="{{ url('comport_theme/assets/images/icon/construct.png') }}" alt="ช่างก่อสร้าง / ต่อเติมอาคาร" width="48">
                             <h4>ช่างก่อสร้าง / ต่อเติมอาคาร</h4>
                         </div>
                     </a>
@@ -215,7 +162,7 @@
                 <div class="col-lg-3 col-md-6">
                     <a href="#">
                         <div class="single-category text-center mb-4">
-                            <img src="{{ url('comport_theme/assets/images/icon/brick.png') }}" alt="category" width="48">
+                            <img src="{{ url('comport_theme/assets/images/icon/brick.png') }}" alt="ช่างก่ออิฐฉาบปูน" width="48">
                             <h4>ช่างก่ออิฐฉาบปูน</h4>
                         </div>
                     </a>
@@ -223,7 +170,7 @@
                 <div class="col-lg-3 col-md-6">
                     <a href="#">
                         <div class="single-category text-center mb-4">
-                            <img src="{{ url('comport_theme/assets/images/icon/window.png') }}" alt="category" width="48">
+                            <img src="{{ url('comport_theme/assets/images/icon/window.png') }}" alt="ช่างทำมุ้งลวด / เหล็กดัด" width="48">
                             <h4>ช่างทำมุ้งลวด / เหล็กดัด</h4>
                         </div>
                     </a>
@@ -231,7 +178,7 @@
                 <div class="col-lg-3 col-md-6">
                     <a href="#">
                         <div class="single-category text-center mb-4">
-                            <img src="{{ url('comport_theme/assets/images/icon/shower.png') }}" alt="category" width="48">
+                            <img src="{{ url('comport_theme/assets/images/icon/shower.png') }}" alt="ช่างประปา / สุขภัณฑ์" width="48">
                             <h4>ช่างประปา / สุขภัณฑ์</h4>
                         </div>
                     </a>
@@ -239,7 +186,7 @@
                 <div class="col-lg-3 col-md-6">
                     <a href="#">
                         <div class="single-category text-center mb-4">
-                            <img src="{{ url('comport_theme/assets/images/icon/technician.png') }}" alt="category" width="48">
+                            <img src="{{ url('comport_theme/assets/images/icon/technician.png') }}" alt="ช่างอเนกประสงค์(ช่างชุมชน)" width="48">
                             <h4>ช่างอเนกประสงค์(ช่างชุมชน)</h4>
                         </div>
                     </a>
@@ -248,22 +195,6 @@
         </div>
     </section>
     <!-- Category Area End -->
-
-    <!-- Footer Area Starts -->
-    <footer class="footer-area" style="padding:1px 0 20px;">
-            <div class="footer-copyright">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12">
-                            <span>
-                            สงวนลิขสิทธิ์ 2562 ร้านช่างประชารัฐ <a href="http://www.dsd.go.th/" target="_blank"><u>กรมพัฒนาฝีมือแรงงาน กระทรวงแรงงาน</u></a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Footer Area End -->
 
 
 @endsection

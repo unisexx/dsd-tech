@@ -9,7 +9,14 @@
     @include('include._css')
 </head>
 <body id="app-layout">
+    <!-- Preloader Starts -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+    <!-- Preloader End -->
+    @include('include._header')
     @yield('content')
+    @include('include._footer')
     @include('include._script')
 </body>
 </html>

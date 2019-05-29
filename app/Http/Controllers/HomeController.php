@@ -28,11 +28,11 @@ class HomeController extends Controller
 
     // ผลการค้นหา
     public function result(){
-
+        return view('result');
     }
 
     // รายละเอียดชื่อคน
     public function detail(){
-
+        return view('detail');
     }
 }
