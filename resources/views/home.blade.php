@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="col-lg-2">
                     <div class="logo-area">
-                        <a href="index.html"><img src="{{ url('comport_theme/assets/images/logo2.png') }}" alt="logo" width="200"></a>
+                        <a href="{{ url('/') }}"><img src="{{ url('comport_theme/assets/images/logo2.png') }}" alt="logo" width="200"></a>
                     </div>
                 </div>
                 <div class="col-lg-10">
@@ -25,7 +25,7 @@
                     </div>  
                     <div class="main-menu">
                         <ul>
-                            <li class="active"><a href="index.html">หน้าแรก</a></li>
+                            <!-- <li class="active"><a href="index.html">หน้าแรก</a></li>
                             <li><a href="about.html">about us</a></li>
                             <li><a href="job-category.html">category</a></li>
                             <li><a href="#">blog</a>
@@ -46,7 +46,7 @@
                             <li class="menu-btn">
                                 <a href="#" class="login">log in</a>
                                 <a href="#" class="template-btn">sign up</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
