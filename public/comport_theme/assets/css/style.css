@@ -1288,7 +1288,7 @@ textarea:focus {
 }
 
 .header-area.single-page .page-title {
-    padding: 140px 0 200px
+    padding: 40px 0 70px
 }
 
 .header-area.single-page .page-title h2,
@@ -3649,7 +3649,7 @@ form .template-btn {
 }
 
 .section-padding {
-    padding: 140px 0
+    padding: 40px 0
 }
 
 .section-padding2 {
