@@ -10,3 +10,27 @@
 <script src="{{ url('comport_theme/assets/js/main.js') }}"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+
+<script>
+$(function () {
+    $("#rateYo").rateYo({
+        maxValue: 4,
+        numStars: 4,
+        rating: 4,
+        fullStar: true,
+        // onChange: function (rating, rateYoInstance) {
+        //     $(this).next().text(rating);
+        // }
+    });
+
+    // var $rateYo = $("#rateYo").rateYo();
+    // console.log( $rateYo.rateYo("rating") );
+
+    // ตอนกดดาวให้คะแนน
+    $("#rateYo").rateYo().on("rateyo.set", function (e, data) {
+        alert("The rating is set to " + data.rating + "!");
+    });
+});
+</script>
