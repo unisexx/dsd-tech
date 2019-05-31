@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Model\RegisJob;
+
 class HomeController extends Controller
 {
     /**
@@ -27,8 +29,24 @@ class HomeController extends Controller
     }
 
     // ผลการค้นหา
-    public function result(){
-        return view('result');
+    public function result(Request $request){
+        $service_id = $request->get('service_id');
+        $province_name = $request->get('province_name');
+        $perPage = 10;
+        
+        $rs = RegisJob::select('*');
+
+        if (!empty($service_id)) {
+            $rs = $rs->whereNotNull(serviceID_2_nameServiceField($service_id));
+        }
+
+        if (!empty($province_name)) {
+            $rs = $rs->where('province',$province_name);
+        }
+
+        $rs = $rs->orderBy('idn','desc')->paginate($perPage);
+
+        return view('result', compact('rs'));
     }
 
     // รายละเอียดชื่อคน

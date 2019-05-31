@@ -176,6 +176,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\HelperServiceProvider::class,
 
+        Yajra\Oci8\Oci8ServiceProvider::class,
+
     ],
 
     /*
