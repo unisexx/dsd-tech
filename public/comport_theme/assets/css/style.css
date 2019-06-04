@@ -3710,3 +3710,7 @@ form .template-btn {
     background-color: #f8b60075;
     border-color: #f8b600;
 }
+
+.page-item.disabled .page-link{
+    color: #ff8800;
+}
