@@ -82,6 +82,10 @@
             <div class="row">
                 <div class="col-lg-12">
 
+                    @if($rs->count() == 0)
+                        <div class="text-center">ไม่พบข้อมูล</div>
+                    @endif
+
                     <!-- วนลูปผลการค้นหาตรงนี้ -->
                     @foreach($rs as $row)
                     <a href="{{ url('detail/'.$row->idn) }}">
