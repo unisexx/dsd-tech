@@ -5,7 +5,7 @@ namespace App\Model;
 use Illuminate\Database\Eloquent\Model;
 
 
-class RegisJob extends Model
+class RegisJobDept extends Model
 {
 
     /**
@@ -13,19 +13,14 @@ class RegisJob extends Model
      *
      * @var string
      */
-    protected $table = 'regis_job';
+    protected $table = 'regis_job_dept';
 
     /**
      * The database primary key value.
      *
      * @var string
      */
-    protected $primaryKey = 'idn';
-
+    protected $primaryKey = 'dept_id';
 
     
-    public function dept()
-    {
-        return $this->hasOne('App\Model\RegisJobDept', 'site', 'site');
-    }
 }

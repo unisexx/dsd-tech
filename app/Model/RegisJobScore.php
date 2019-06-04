@@ -5,27 +5,25 @@ namespace App\Model;
 use Illuminate\Database\Eloquent\Model;
 
 
-class RegisJob extends Model
+class RegisJobScore extends Model
 {
+    public $timestamps = false;
 
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'regis_job';
+    protected $table = 'regis_job_score';
 
     /**
      * The database primary key value.
      *
      * @var string
      */
-    protected $primaryKey = 'idn';
+    protected $primaryKey = 'idnn';
 
 
-    
-    public function dept()
-    {
-        return $this->hasOne('App\Model\RegisJobDept', 'site', 'site');
-    }
+
+    protected $fillable = ['score','commentt','idn'];
 }

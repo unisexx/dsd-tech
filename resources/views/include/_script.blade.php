@@ -13,6 +13,11 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 
+{{-- alertify --}}
+<script src="{{ url('/js/alertify/alertify.min.js') }}"></script>
+<link href="{{ url('/js/alertify/css/alertify.min.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{ url('/js/alertify/css/themes/default.min.css') }}" rel="stylesheet" type="text/css" />
+
 <script>
 $(function () {
     $("#rateYo").rateYo({
@@ -30,7 +35,8 @@ $(function () {
 
     // ตอนกดดาวให้คะแนน
     $("#rateYo").rateYo().on("rateyo.set", function (e, data) {
-        alert("The rating is set to " + data.rating + "!");
+        // alert("The rating is set to " + data.rating + "!");
+        $('input[name=score]').val(data.rating);
     });
 });
 </script>

@@ -517,7 +517,7 @@ textarea:focus {
 @media (min-width: 576px) and (max-width: 767.98px) {
     .search-bg form input {
         width: 100%;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
         padding: 16px 20px
     }
 }
@@ -525,7 +525,7 @@ textarea:focus {
 @media (max-width: 575.98px) {
     .search-bg form input {
         width: 100%;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
         padding: 16px 20px
     }
 }
@@ -3684,4 +3684,29 @@ form .template-btn {
 
 .tab-item li:hover {
     color: #ff9902
+}
+
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #f8b600;
+    border-color: #f8b600;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #ff9902;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.page-link:hover {
+    color: #ff8800;
+    background-color: #f8b60075;
+    border-color: #f8b600;
 }

@@ -37,21 +37,31 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <form action="result" class="d-md-flex justify-content-between" role="search">
-                            <div class="col-lg-5 col-md-5 col-sm-12">
-                                <select name="service_id" class="selectpicker" data-width="100%" data-live-search="true" data-size="5" data-style="btn-light btn-lg" required>
-                                    <option value="">เลือกสาขาช่าง</option>
+                        <form action="result" class="d-md-flex flex-wrap justify-content-start" role="search">
+                            <div class="col-lg-5 col-md-5 col-sm-12 mb-1">
+                                <input class="form-control form-control-lg" type="text" name="tnames" value="{{ request('tnames') }}" placeholder="ชื่อ - สกุล" style="width:100%;">
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-12 mb-1">
+                                <select name="service_id" class="selectpicker" data-width="100%" data-live-search="true" data-size="5" data-style="btn-light btn-lg">
                                     @foreach($services as $row)
                                         <option value="{{ $row->service_id }}" @if(request('service_id') == $row->service_id) selected @endif>{{ $row->service_name }}</option>
                                     @endforeach
                                 </select>
                             </div>
-                            <div class="col-lg-5 col-md-5 col-sm-12">
+                            <div class="col-lg-5 col-md-5 col-sm-12 mb-1">
                                 <select name="province_name" class="selectpicker" data-width="100%" data-live-search="true" data-size="5" data-style="btn-light btn-lg">
                                     <option value="">เลือกจังหวัดในพื้นที่ของท่าน</option>
                                     @foreach($provinces as $row)
-                                        <option value="{{ $row->prv1 }}">{{ $row->prv1 }}</option>
+                                        <option value="{{ $row->prv1 }}" @if(request('province_name') == $row->prv1) selected @endif>{{ $row->prv1 }}</option>
                                     @endforeach
+                                </select>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-12 mb-1">
+                                <select name="typeofregis" class="selectpicker" data-width="100%" data-live-search="true" data-size="5" data-style="btn-light btn-lg">
+                                    <option value="">การรับรอง</option>
+                                    <option value="ผู้ผ่านการฝึกอบรม" @if(request('typeofregis') == 'ผู้ผ่านการฝึกอบรม') selected @endif>ผู้ผ่านการฝึกอบรม</option>
+                                    <option value="ผู้ผ่านการรับรองความรู้ความสามารถ" @if(request('typeofregis') == 'ผู้ผ่านการรับรองความรู้ความสามารถ') selected @endif>ผู้ผ่านการรับรองความรู้ความสามารถ</option>
+                                    <option value="ผู้ผ่านการทดสอบมาตรฐานฝีมือแรงงาน" @if(request('typeofregis') == 'ผู้ผ่านการทดสอบมาตรฐานฝีมือแรงงาน') selected @endif>ผู้ผ่านการทดสอบมาตรฐานฝีมือแรงงาน</option>
                                 </select>
                             </div>
                             <div class="col-lg-2 col-md-2 col-sm-12">

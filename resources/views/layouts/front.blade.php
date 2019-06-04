@@ -18,5 +18,6 @@
     @yield('content')
     @include('include._footer')
     @include('include._script')
+    {!! js_notify() !!}
 </body>
 </html>
